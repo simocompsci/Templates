@@ -52,12 +52,14 @@ export default function ProductGrid({ products = defaultProducts }: ProductGridP
                                     className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
+
+                                {/* Product Name */}
+                                <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-md md:text-2xl text-white font-light text-center">
+                                    {product.name}
+                                </p>
                             </div>
 
-                            {/* Product Name - Optional, can be removed if not needed */}
-                            {/* <p className="text-sm md:text-base text-gray-700 font-light text-center">
-                {product.name}
-              </p> */}
+
                         </div>
                     ))}
                 </div>
