@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import LibreBodoni from "next/font/google";
 
 interface HeroSectionProps {
   title?: string;
@@ -31,12 +31,12 @@ export default function HeroSection({
       </div>
 
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-end pb-12 md:pb-16 lg:pb-20 px-6 md:px-12 lg:px-16">
-        <div className="max-w-xs md:max-w-sm">
-          <p className="text-white/90 text-xs md:text-sm font-light tracking-wide mb-2 md:mb-3">
+      <div className="relative h-full flex flex-col items-center text-center justify-center pb-12 md:pb-16 lg:pb-20 px-6 md:px-12 lg:px-16">
+        <div className="max-w-xs md:max-w-lg">
+          <p className="text-white/90 text-xs md:text-lg font-light tracking-wide mb-2 md:mb-3">
             {subtitle}
           </p>
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-light tracking-tight">
+          <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-light tracking-tight">
             {title}
           </h1>
         </div>
